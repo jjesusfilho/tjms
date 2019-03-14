@@ -1,0 +1,18 @@
+Package: tjms
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "José",
+           family = "de Jesus Filho",
+           role = c("aut", "cre"),
+           email = "jjesusfilho@gmail.com")
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    roxygen2
+Imports: 
+    rlang (>= 0.1.2),
+    magrittr
+RoxygenNote: 6.1.1
