@@ -6,7 +6,7 @@ Authors@R:
            family = "de Jesus Filho",
            role = c("aut", "cre"),
            email = "jjesusfilho@gmail.com")
-Description: Baixa e orgnaiza dados do Tribunal de Justiça do Mato
+Description: Baixa e orgniza dados do Tribunal de Justiça do Mato
     Grosso do Sul.
 License: MIT + file LICENSE
 Encoding: UTF-8
