@@ -32,7 +32,7 @@ ler_sentencas_tjms <- function(arquivos = NULL, diretorio="."){
 
     processo <- stringr::str_extract(.x,"\\d{20}")
 
-    cd_documento <-str_extract(.x,"(?<=documento_).+")
+    cd_documento <- stringr::str_extract(.x,"(?<=documento_).+")
 
     tibble::tibble(processo,cd_documento, texto)
 

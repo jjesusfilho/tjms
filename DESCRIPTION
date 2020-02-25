@@ -1,12 +1,13 @@
 Package: tjms
-Title: What the Package Does (One Line, Title Case)
+Title: Baixa e Organiz dados processuais do TJMS
 Version: 0.0.0.9001
 Authors@R: 
     person(given = "José",
            family = "de Jesus Filho",
            role = c("aut", "cre"),
            email = "jjesusfilho@gmail.com")
-Description: What the package does (one paragraph).
+Description: Baixa e orgnaiza dados do Tribunal de Justiça do Mato
+    Grosso do Sul.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -16,5 +17,16 @@ Imports:
     rlang (>= 0.1.2),
     magrittr,
     unrtf,
-    striprtf
+    striprtf,
+    tibble,
+    purrr,
+    dplyr,
+    httr,
+    xml2,
+    stringr,
+    pdftools,
+    purrrogress,
+    abjutils,
+    slider,
+    tidyr
 RoxygenNote: 7.0.2
