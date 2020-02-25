@@ -11,16 +11,15 @@
 #'     rtf.
 #' @export
 #'
-baixar_sentencas_tjms <- function(df,diretorio="."){
-
+baixar_sentencas_tjms <- function(df, diretorio = ".") {
   df <- df %>%
     dplyr::filter(!is.na(doc_link))
 
-  lista<- slider::slide(df,~.x)
+  lista <- slider::slide(df, ~.x)
 
-  url<-"https://esaj.tjms.jus.br/pastadigital/getRTF.do?"
+  url <- "https://esaj.tjms.jus.br/pastadigital/getRTF.do?"
 
-  purrr::walk(lista,purrr::possibly(purrrogress::with_progress(~{
+  purrr::walk(lista, purrr::possibly(purrrogress::with_progress(~ {
     cd_documento <- .x$doc_link %>%
       stringr::str_extract("(?<=cdDocumento.)\\d+")
 
@@ -28,7 +27,7 @@ baixar_sentencas_tjms <- function(df,diretorio="."){
       stringr::str_extract("(?<=codigo.).+?(?=&)")
 
     processo <- abjutils::build_id(.x$processo)
-    foro <- stringr::str_extract(.x$processo,"\\d{2}$")
+    foro <- stringr::str_extract(.x$processo, "\\d{2}$")
     query <-
       list(
         nuSeqRecurso = "00000",
@@ -45,12 +44,11 @@ baixar_sentencas_tjms <- function(df,diretorio="."){
         cdProcesso = codigo,
         cdFormatoDoc = "2",
         cdForo = foro,
-        idDocumento = paste0(cd_documento,"-1-0"),
+        idDocumento = paste0(cd_documento, "-1-0"),
         numFinal = "1",
         sigiloExterno = "N"
       )
-    arquivo <- file.path(diretorio,paste0("sentenca_processo_",.x$processo,"_documento_",codigo))
-    httr::GET(url,query=query,httr::write_disk(arquivo,overwrite = TRUE))
-  }),NULL))
-
+    arquivo <- file.path(diretorio, paste0("sentenca_processo_", .x$processo, "_documento_", codigo))
+    httr::GET(url, query = query, httr::write_disk(arquivo, overwrite = TRUE))
+  }), NULL))
 }

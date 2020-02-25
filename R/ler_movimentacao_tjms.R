@@ -6,17 +6,15 @@
 #' @return tibble
 #' @export
 #'
-ler_movimentacao <-function(arquivos = NULL,diretorio = ".") {
-
-  if (is.null(arquivos)){
+ler_movimentacao <- function(arquivos = NULL, diretorio = ".") {
+  if (is.null(arquivos)) {
     arquivos <- list.files(
       path = diretorio, pattern = ".html",
       full.names = TRUE
     )
   }
 
-  purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
-
+  purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~ {
     processo <- stringr::str_extract(.x, "\\d{20}")
 
     texto <- xml2::read_html(.x) %>%
@@ -29,7 +27,7 @@ ler_movimentacao <-function(arquivos = NULL,diretorio = ".") {
     mov <- xml2::xml_find_all(texto, ".//td[@style='vertical-align: top; padding-bottom: 5px']") %>%
       xml2::xml_text(trim = TRUE)
 
-    doc_link <-xml2::xml_find_all(texto, ".//td[@width='120']/following-sibling::td/a") %>%
+    doc_link <- xml2::xml_find_all(texto, ".//td[@width='120']/following-sibling::td/a") %>%
       xml2::xml_attr("href")
 
 
