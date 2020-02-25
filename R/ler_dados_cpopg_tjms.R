@@ -1,3 +1,12 @@
+#' Lê metadados dos processos de primeiro grau do TJMS
+#'
+#' @param arquivos Vetor de arquivos
+#' @param diretorio Se não informados os arquivos, informar o diretório
+#' @param wide Se TRUE, as informações serão dispostas em wide format.
+#'
+#' @return tibble
+#' @export
+#'
 ler_dados_cpopg_tjms <- function(arquivos = NULL, diretorio = ".", wide = FALSE) {
   if (is.null(arquivos)) {
     arquivos <- list.files(
