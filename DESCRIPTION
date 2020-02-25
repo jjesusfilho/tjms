@@ -1,5 +1,5 @@
 Package: tjms
-Title: Baixa e Organiz dados processuais do TJMS
+Title: Baixa e Organiza dados processuais do TJMS
 Version: 0.0.0.9001
 Authors@R: 
     person(given = "José",
