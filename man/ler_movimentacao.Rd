@@ -2,7 +2,7 @@
 % Please edit documentation in R/ler_movimentacao_tjms.R
 \name{ler_movimentacao}
 \alias{ler_movimentacao}
-\title{Ler movimentacao tjms}
+\title{Lê movimentação processual do tjms}
 \usage{
 ler_movimentacao(arquivos = NULL, diretorio = ".")
 }
@@ -15,5 +15,5 @@ ler_movimentacao(arquivos = NULL, diretorio = ".")
 tibble
 }
 \description{
-Ler movimentacao tjms
+Lê movimentação processual do tjms
 }

@@ -1,4 +1,4 @@
-#' Ler movimentacao tjms
+#' Lê movimentação processual do tjms
 #'
 #' @param arquivos Vetor com os caminhos para os arquivos
 #' @param diretorio Se não informar os arquivos, informar o diretório
