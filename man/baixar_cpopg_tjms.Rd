@@ -2,7 +2,7 @@
 % Please edit documentation in R/baixar_cpopg_tjms.R
 \name{baixar_cpopg_tjms}
 \alias{baixar_cpopg_tjms}
-\title{Baixar consulta processual de primeiro grau}
+\title{Baixa consulta processual de primeiro grau}
 \usage{
 baixar_cpopg_tjms(processos = NULL, diretorio = ".")
 }
@@ -15,5 +15,5 @@ baixar_cpopg_tjms(processos = NULL, diretorio = ".")
 html com dados processuais
 }
 \description{
-Baixar consulta processual de primeiro grau
+Baixa consulta processual de primeiro grau
 }

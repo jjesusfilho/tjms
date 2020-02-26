@@ -1,4 +1,4 @@
-#' Baixar consulta processual de primeiro grau
+#' Baixa consulta processual de primeiro grau
 #'
 #' @param processos Número do processo (cnj)
 #' @param diretorio Diretório onde serão armazenados os htmls
