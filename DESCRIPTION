@@ -28,5 +28,8 @@ Imports:
     purrrogress,
     abjutils,
     slider,
-    tidyr
+    tidyr,
+    lubridate,
+    zoo,
+    janitor
 RoxygenNote: 7.0.2

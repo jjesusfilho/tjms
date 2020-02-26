@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • tjms</title>
+<title>Lê movimentação processual do tjms — ler_movimentacao_tjms • tjms</title>
 
 
 <!-- jquery -->
@@ -35,7 +35,9 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Lê movimentação processual do tjms — ler_movimentacao_tjms" />
+<meta property="og:description" content="Lê movimentação processual do tjms" />
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -54,7 +56,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -96,92 +98,44 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Lê movimentação processual do tjms</h1>
+    
+    <div class="hidden name"><code>ler_movimentacao_tjms.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Lê movimentação processual do tjms</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>ler_movimentacao_tjms</span>(<span class='kw'>arquivos</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>diretorio</span> <span class='kw'>=</span> <span class='st'>"."</span>)</pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="baixar_cpopg_tjms.html">baixar_cpopg_tjms()</a></code> </p>
-        </td>
-        <td><p>Baixar consulta processual de primeiro grau</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="baixar_sentencas_tjms.html">baixar_sentencas_tjms()</a></code> </p>
-        </td>
-        <td><p>Baixa sentencas do tjms a partir de tabela de sentencas retirada da
-    movimentação</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ler_dados_cpopg_tjms.html">ler_dados_cpopg_tjms()</a></code> </p>
-        </td>
-        <td><p>Lê metadados dos processos de primeiro grau do TJMS</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ler_movimentacao_tjms.html">ler_movimentacao_tjms()</a></code> </p>
-        </td>
-        <td><p>Lê movimentação processual do tjms</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ler_partes_tjms.html">ler_partes_tjms()</a></code> </p>
-        </td>
-        <td><p>Aplica parser para extrair informações sobre as partes do
-    processo.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ler_sentencas_tjms.html">ler_sentencas_tjms()</a></code> </p>
-        </td>
-        <td><p>Lê sentenças baixadas com função baixar_sentencas_tjms</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="numero.html">numero()</a></code> </p>
-        </td>
-        <td><p>Converte valor da ação para número ou qualquer outra string.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="organizar_dados_cpopg.html">organizar_dados_cpopg()</a></code> </p>
-        </td>
-        <td><p>Organiza metadados cpopg (apenas criminal por ora)</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="tjms.html">tjms</a></code> </p>
-        </td>
-        <td><p><code>tjms</code> package</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>arquivos</th>
+      <td><p>Vetor com os caminhos para os arquivos</p></td>
+    </tr>
+    <tr>
+      <th>diretorio</th>
+      <td><p>Se não informar os arquivos, informar o diretório</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>tibble</p>
+
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      <li><a href="#arguments">Arguments</a></li>
+      <li><a href="#value">Value</a></li>
     </ul>
+
   </div>
 </div>
 
