@@ -7,7 +7,7 @@
 #' @details Os arquivos são armazenados sem extenção, pois não sabemos se
 #'     eles são rtf ou pdf. A função ler_sentencas_tjms se encarrega de
 #'     fazer essa verificação.
-#' @return Arquivos sem extenção. Não dá para saber se o arquivo é pdf ou
+#' @return Arquivos sem extensão. Não dá para saber se o arquivo é pdf ou
 #'     rtf.
 #' @export
 #'

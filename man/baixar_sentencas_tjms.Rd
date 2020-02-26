@@ -13,7 +13,7 @@ baixar_sentencas_tjms(df, diretorio = ".")
 \item{diretorio}{diretório onde serão armazenadas as sentenças}
 }
 \value{
-Arquivos sem extenção. Não dá para saber se o arquivo é pdf ou
+Arquivos sem extensão. Não dá para saber se o arquivo é pdf ou
     rtf.
 }
 \description{
