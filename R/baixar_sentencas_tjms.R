@@ -4,7 +4,7 @@
 #' @param df Movimentação com url da sentença
 #' @param diretorio diretório onde serão armazenadas as sentenças
 #'
-#' @details Os arquivos são armazenados sem extenção, pois não sabemos se
+#' @details Os arquivos são armazenados sem extensão, pois não sabemos se
 #'     eles são rtf ou pdf. A função ler_sentencas_tjms se encarrega de
 #'     fazer essa verificação.
 #' @return Arquivos sem extensão. Não dá para saber se o arquivo é pdf ou

@@ -21,7 +21,7 @@ Baixa sentencas do tjms a partir de tabela de sentencas retirada da
     movimentação
 }
 \details{
-Os arquivos são armazenados sem extenção, pois não sabemos se
+Os arquivos são armazenados sem extensão, pois não sabemos se
     eles são rtf ou pdf. A função ler_sentencas_tjms se encarrega de
     fazer essa verificação.
 }
