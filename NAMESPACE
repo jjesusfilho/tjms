@@ -2,7 +2,7 @@
 
 export("%>%")
 export(.data)
-export(baixar_cjsg)
+export(baixar_cjsg_tjms)
 export(baixar_cpopg_tjms)
 export(baixar_sentencas_tjms)
 export(enexpr)
