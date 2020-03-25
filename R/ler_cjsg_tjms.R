@@ -21,7 +21,7 @@ ler_cjsg_tjms <- function(arquivos = NULL, diretorio = ".") {
     full.names = T
   )
 }
-  purrr::map_dfr(arquivos, purrr::possibly(~ {
+  purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~ {
     resposta <- xml2::read_html(.x)
 
     aC <-
@@ -70,5 +70,5 @@ ler_cjsg_tjms <- function(arquivos = NULL, diretorio = ".") {
       dplyr::mutate_at(6:7,list(~lubridate::dmy(.))) %>%
       dplyr::mutate(processo = stringr::str_remove_all(processo,"\\D+"))
 
-  }, otherwise = NULL))
+  }), otherwise = NULL))
 }

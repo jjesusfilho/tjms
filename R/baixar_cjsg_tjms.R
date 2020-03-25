@@ -16,7 +16,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' baixar_cjsg(livre = "Lei Maria da Penha")
+#' baixar_cjsg_tjms(livre = "Lei Maria da Penha")
 #' }
 #'
 baixar_cjsg_tjms <-
@@ -97,7 +97,7 @@ baixar_cjsg_tjms <-
 
 
     if (tipo == "A") {
-      purrr::map(paginas, purrr::possibly(~{
+      purrr::map(paginas, purrr::possibly(purrrogress::with_progress(~{
         Sys.sleep(1)
         httr::GET(
           paste0(
@@ -110,9 +110,9 @@ baixar_cjsg_tjms <-
                            overwrite = TRUE
           )
         )
-      }, NULL))
+      }), NULL))
     } else {
-      purrr::map(paginas, purrr::possibly(~ {
+      purrr::map(paginas, purrr::possibly(purrrogress::with_progress(~ {
         Sys.sleep(1)
 
         httr::GET(
@@ -126,6 +126,6 @@ baixar_cjsg_tjms <-
           )
         )
         # httr::write_disk(paste0(diretorio, "/pagina_", .x,".html"), overwrite = TRUE)
-      }, NULL))
+      }), NULL))
     }
   }

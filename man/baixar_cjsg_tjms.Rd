@@ -43,7 +43,7 @@ Baixa consulta jurisprudencial do tjms
 }
 \examples{
 \dontrun{
-baixar_cjsg(livre = "Lei Maria da Penha")
+baixar_cjsg_tjms(livre = "Lei Maria da Penha")
 }
 
 }
