@@ -8,6 +8,7 @@
 #' @export
 #'
 ler_sentencas_tjms <- function(arquivos = NULL, diretorio = ".") {
+  suppressWarnings({
   if (is.null(arquivos)) {
     arquivos <- list.files(diretorio, "sentenca_", full.names = T)
   }
@@ -27,4 +28,5 @@ ler_sentencas_tjms <- function(arquivos = NULL, diretorio = ".") {
 
     tibble::tibble(processo, cd_documento, texto)
   }), NULL))
+  })
 }
