@@ -11,7 +11,7 @@
 #' cjsg <- ler_cjsg_tjms()
 #' }
 #'
-ler_cjsg_tjms <- function(arquivos = NULL, diretorio = ".") {
+tjms_ler_cjsg <- function(arquivos = NULL, diretorio = ".") {
 
   if(is.null(arquivos)){
 

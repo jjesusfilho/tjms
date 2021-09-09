@@ -7,7 +7,7 @@
 #' @return tibble
 #' @export
 #'
-ler_dados_cpopg_tjms <- function(arquivos = NULL, diretorio = ".", wide = FALSE) {
+tjms_ler_dados_cpopg <- function(arquivos = NULL, diretorio = ".", wide = FALSE) {
   if (is.null(arquivos)) {
     arquivos <- list.files(
       path = diretorio, pattern = ".html",

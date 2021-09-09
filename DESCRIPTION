@@ -25,11 +25,10 @@ Imports:
     xml2,
     stringr,
     pdftools,
-    purrrogress,
     abjutils,
-    slider,
     tidyr,
     lubridate,
     zoo,
-    janitor
-RoxygenNote: 7.1.0
+    janitor,
+    qpdf
+RoxygenNote: 7.1.1

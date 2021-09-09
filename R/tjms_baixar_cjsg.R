@@ -19,7 +19,7 @@
 #' baixar_cjsg_tjms(livre = "Lei Maria da Penha")
 #' }
 #'
-baixar_cjsg_tjms <-
+tjms_baixar_cjsg <-
   function(livre = "",
            aspas = FALSE,
            classe = "",

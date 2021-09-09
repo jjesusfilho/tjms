@@ -6,7 +6,7 @@
 #' @return html com dados processuais
 #' @export
 #'
-baixar_cpopg_tjms <- function(processos = NULL, diretorio = ".") {
+tjms_baixar_cpopg <- function(processos = NULL, diretorio = ".") {
   httr::set_config(httr::config(ssl_verifypeer = FALSE))
   processos <- stringr::str_remove_all(processos, "\\D+") %>%
     stringr::str_pad(width = 20, "left", "0") %>%

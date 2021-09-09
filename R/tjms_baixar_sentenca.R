@@ -11,11 +11,12 @@
 #'     rtf.
 #' @export
 #'
-baixar_sentencas_tjms <- function(df, diretorio = ".") {
+tjms_baixar_sentenca <- function(df, diretorio = ".") {
+
   df <- df %>%
     dplyr::filter(!is.na(doc_link))
 
-  lista <- slider::slide(df, ~.x)
+  #lista <- slider::slide(df, ~.x)
 
   url <- "https://esaj.tjms.jus.br/pastadigital/getRTF.do?"
 
